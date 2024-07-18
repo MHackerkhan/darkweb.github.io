@@ -7,30 +7,48 @@
 <style>
         /* Reset and general styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #667eea;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: inline;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            text-align: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            overflow: hidden;
         }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            transition: box-shadow 0.5s ease;
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+            float: left;
+        }
+
+        .container:hover {
+            
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .container h2 {
+            margin-bottom: 30px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 2rem;
+        }
+
         header {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             margin-bottom: 20px;
             float: left;
         }
-        .content {
-            max-width: 800px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            float: left;
+        
         }
         h1 {
             color: #ffcc00;
@@ -69,7 +87,7 @@
     </header>
     <div class="box"><a href="http://ytdpvfjmjwb7m74dnaqjwyxegshuvj4ghobk3mticfrkhwaaikyzeyqd.onion/">Go To Darknet Home</a></div>
     <div class="box"><a href="darkweb.html">History of Dark web</a></div>
-    <div class="content">
+    <div class="container">
         <h2>2022: Decentralized Ascent</h2>
         <p>
             April 5: Hydra Market, by then the largest dark web marketplace with a reported revenue of $5 billion and approximately 17 million users, is seized by German and U.S. authorities. The seizure includes the marketplace's Germany-based servers and its cryptocurrency assets.
